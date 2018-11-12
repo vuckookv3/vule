@@ -1,8 +1,103 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  font: 14px "Trebuchet MS", sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1.5px 1.5px #f7a8ef;
+}
+
+h1{
+  font-size: 34px;
+  color: white;
+  text-shadow: 2px 2px #cecece;
+  
+}
+.main-login{
+  margin: 0 auto;
+  width: 500px;  
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #41c6be;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+#button-login{
+  text-align: center;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer-login {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container-login {
+  padding: 16px;
+}
+
+ul{
+  list-style-type: none;
+}
+.main-projects{
+  padding: 20px;
+  margin: 0 auto;
+  width: 500px; 
+  border-radius: 20px;
+  background-color: #41c6be;
+}
+
+.main-projects li{
+  padding: 0px;
+  font: 30px "Trebuchet MS" ,  sans-serif;
+  color: white;
+}
+
+.main-youtube{
+  padding: 20px;
+  margin: 0 auto;
+  width: 60%; 
+  border-radius: 20px;
+  background-color: #def9f8;
+  height: 800px;
+}
+
+img.avatarYT {
+  width: 40%;
+}
+.container-youtube {
+  padding: 16px;
+  text-align: center;
+}
+
+#load{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.loading{
+  text-align: center;
+  width: 30%;
 }

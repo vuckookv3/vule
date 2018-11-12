@@ -1,0 +1,29 @@
+<% include partials/header.ejs %>
+    <div class="main-youtube">
+        <div class="main-login">
+            <div class="imgcontainer-login">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1280px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Avatar" class="avatarYT">
+            </div>
+          
+            <div class="container-youtube">
+              <label for="link"><b>Unesite YouTube Link</b></label>
+              <input type="text" placeholder="Enter YouTube Link" name="link" required>
+      
+              <div id="button-login">
+                <button type="submit" onclick="ShowDiv()">Download</button>
+              </div>
+              <div id="load">
+              <p>Please wait...</p>
+              <img src="https://loading.io/spinners/eclipse/lg.ring-loading-gif.gif" alt="Downloading" class="loading">
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        function showDiv() {
+          document.getElementById('load').style.display = "block";
+        }
+    </script>
+<% include partials/footer.ejs %>
+
