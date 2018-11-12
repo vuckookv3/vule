@@ -101,3 +101,7 @@ img.avatarYT {
   text-align: center;
   width: 30%;
 }
+
+#youtube-button:disabled {
+  background-color: red;
+}
