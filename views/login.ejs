@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ivo i Vule</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>LOGIN</h1>
-  </body>
-</html>
+<% include partials/header.ejs %>
+
+<div class="main-login">
+  <div class="imgcontainer-login">
+    <img src="https://i.imgur.com/dGo8DOk.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container-login">
+    <label for="uname">
+      <b>Username</b>
+    </label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw">
+      <b>Password</b>
+    </label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <div id="button-login">
+      <button type="submit">Login</button>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer.ejs %>
