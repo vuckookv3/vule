@@ -51,12 +51,15 @@ $(document).ready(function () {
 
     function youtubeIdExtractor(url, breaker = 'v=') {
         try {
-            let videoId = url.split(breaker)[1];
-            let ampersandPosition = videoId.indexOf('&');
-            if (ampersandPosition != -1) {
-                videoId = videoId.substring(0, ampersandPosition);
-            }
-            return videoId;
+            // let videoId = url.split(breaker)[1];
+            // let ampersandPosition = videoId.indexOf('&');
+            // if (ampersandPosition != -1) {
+            //     videoId = videoId.substring(0, ampersandPosition);
+            // }
+            // return videoId;
+            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+            const videoId = regex.exec(url);
+            return videoId[1];
         }
         catch (err) {
             return false;
