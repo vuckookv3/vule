@@ -13,11 +13,17 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+console.log(__dirname)
 // app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/vule/vule', (req, res) => {
+  console.log(req.headers["user-agent"])
+  res.sendFile(path.join(__dirname, 'ee.html'))
+})
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
